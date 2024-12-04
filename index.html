@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>harshal-portfolio</title>
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script></head>
+<body>
+
+    <header>
+        <h1>Harshal Sawant</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#project">Project</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>  
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a self-taught passionate developer from India 🇮🇳</p>
+    </section>
+    <section id="projects">
+        <h2>My Projects;)</h2>
+        <div class="project">
+            <h3>CoreTaskOptimizer</h3>
+            <p>A Magisk module that optimizes Android performance by intelligently managing CPU core allocation and process priorities for enhanced system responsiveness</p>
+        </div>
+        
+        <div class="project">
+            <h3>AndroidTweaker</h3>
+            <p>Android Tweaker is a powerful module that optimizes your Android device's kernel and RAM for a perfect balance between performance and battery life. Users can apply recommended settings to enhance multitasking, memory management, and gaming experience while extending battery life. The module supports EAS/HMP kernels, monolithic/hybrid architectures, and provides a simple optimization solution for all Android devices.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form id="contact-from">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <textarea id="message" placeholder="Your Message" required></textarea>
+            <button type="submit">Sende message</button>
+        </form>
+        <div id="response-message"></div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 My Portfolio All rights reserved</p>
+    </footer>
+
+    <script src="/script.js"></script>
+</body>
+</html>
