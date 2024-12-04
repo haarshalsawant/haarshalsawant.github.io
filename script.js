@@ -1,5 +1,5 @@
 (function() {
-    emailjs.init(""); //UsrID
+    emailjs.init("Harshal"); //UsrID
 })();
 
 document.getElementById('contact-form').addEventListener('submit',
@@ -10,7 +10,7 @@ document.getElementById('contact-form').addEventListener('submit',
         const email = document.getElementById('email').value;
         const message = document.getElementById('message').value;
 
-        emailjs.sende("service_728p7e8", "", { // service,template ID
+        emailjs.sende("service_728p7e8", "template_nu4lrl9", { // service,template ID
             form_name: name,
             from_email:email,
             message_html: message
