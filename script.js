@@ -1,25 +1,23 @@
 (function() {
-    emailjs.init("Harshal"); //UsrID
-})();
-
-document.getElementById('contact-form').addEventListener('submit',
-    function(event) {
-        event.preventDefault(); //prevent from filling form
-
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const message = document.getElementById('message').value;
-
-        emailjs.sende("service_728p7e8", "template_nu4lrl9", { // service,template ID
-            form_name: name,
-            from_email:email,
-            message_html: message
-        })
-        
-        .then(function(response) {
-            document.getElementById('reponse-message').innerText = "Message sent succesfully!";
-            document.getElementById("contact-form").reset(); //clear form.
-        }, function(error) {
-            document.getElementById('response-message').innerText = "Faild to send message. Please try again.";
-        });
-})();
+    emailjs.init("NUtf65TGtlO-03dTA"); // Initialize with User ID
+  })();
+  
+  document.getElementById('contact-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevent default form submission
+  
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+  
+    emailjs.send("service_h0y2k0s", "template_nu4lrl9", {
+      form_name: name,
+      from_email: email,
+      message_html: message
+    })
+    .then(function(response) {
+      document.getElementById('response-message').innerText = "Message sent successfully!";
+      document.getElementById("contact-form").reset(); // Clear form
+    }, function(error) {
+      document.getElementById('response-message').innerText = "Failed to send message. Please try again.";
+    });
+  });
